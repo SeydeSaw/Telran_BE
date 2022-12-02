@@ -6,9 +6,9 @@ public class Main {
     public static void main(String[] args) {
 
 
-    // 1) Метод(процедура), которая будет считывать значения и выводить их на консоль:
+        // 1) Метод(процедура), которая будет считывать значения и выводить их на консоль:
 
-        byte a ;
+        byte a;
 
         System.out.println("Введите  число от - 128 до 128: ");
         a = scanner.nextByte();
@@ -17,6 +17,18 @@ public class Main {
 
 
         System.out.println("Сумма = " + sum());
+
+
+        System.out.println("Введите первое число: ");
+        int q = scanner.nextInt();
+        System.out.println("Введите второе число: ");
+        int w = scanner.nextInt();
+
+        int e = calculateDiff(q, w);
+
+        System.out.println("Итого: " + e);
+
+
 
     }
 
@@ -33,5 +45,15 @@ public class Main {
 
         return a+b+c;
     }
+
+
+
+    //  3*) Сделать глобальную переменную static Scanner и считать два значения в метоже main, передать их в функцию, вычислить
+    //    их разность и вывести на консоль их метода main:
+
+    static int calculateDiff(int q, int w) {
+        return q - w;
+    }
+
 
 }
